@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript basics</title>
+</head>
+
+<body>
+    <h1>Javascript basics</h1>
+    <ul>
+        <li>Spring</li>
+        <li>Summer</li>
+        <li>Fall</li>
+        <li>Winter</li>
+    </ul>
+    <script>
+        //Function Declaration
+        function thisIsAFunction(){
+            console.log("One");
+            console.log("Two");
+            console.log("Three");
+        }
+
+        function aFunctionThatReturnsValue(){
+            console.log("One");
+            return 19;
+            console.log("Two");
+            console.log("Three");
+            return "The function returned a string";
+        }
+
+        //let functionValue = aFunctionThatReturnsValue();
+
+        //console.log(functionValue);
+        //Invoking Functions
+        /*
+        thisIsAFunction();
+        thisIsAFunction();
+        thisIsAFunction();
+        thisIsAFunction();
+        */
+
+        function greet(name = "Unknown", age = 0){
+            console.log(`Hello, my name is ${name} and I'm ${age} years old`);
+        }
+
+        greet("Kenai", 7);
+        greet();
+
+        declaredFunction();
+        //declared functions vs expressed functions
+        function declaredFunction(){
+            console.log("This is a declared function, it can be called anywhere in our code, even before the function is declared.");
+        }
+
+        declaredFunction();
+
+        // anonymousFunction
+
+        // expressedFunction();
+
+        const expressedFunction = function(){
+            console.log("This is an expressed function, that is, a function that has been assigned as a value to a variable. If we invoke this function before its definition, javascript will tell us...");
+        }
+
+        expressedFunction();
+        
+    </script>
+</body>
+
+</html>
